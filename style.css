@@ -11,7 +11,7 @@
 }
 
 main{
-  width: 960px;
+  width: 960px;/**/
   margin: 50px auto;
 }
 
@@ -60,4 +60,28 @@ main{
 
 .title{
   margin: 15px 0 5px;
+}
+
+@media screen and (max-width: 768px){/**768px以下の時*/
+main{
+  width: 100%;/*横幅を画面サイズに*/
+  /*height: 100%;高さは不要であった*/
+  margin: 50px auto;
+}
+.step-box{
+  float: none;/*横並びを解除*/
+  width: 90%;
+  margin: 20px;/*中央に揃え*/
+  padding: 10px;
+  position: relative;
+  border: 1px solid #eee;
+}
+
+/*画像に共通クラスを作成しまとめて作業しようとした
+.imgfix{
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+*/
 }
